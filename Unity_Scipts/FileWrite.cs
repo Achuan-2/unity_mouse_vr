@@ -9,9 +9,9 @@ public class FileWrite : MonoBehaviour
     public void WriteToText(string fileName, string header,string content)
     {
         //Path of  the file
-        #if UNITY_EDITOR //Èç¹ûÊÇÔÚ±à¼­Æ÷»·¾³ÏÂ
+        #if UNITY_EDITOR //å¦‚æœæ˜¯åœ¨ç¼–è¾‘å™¨ç¯å¢ƒä¸‹
                string path = Application.dataPath + "/Log/"+ fileName;
-        #else//ÔÚ´ò°ü³öÀ´µÄ»·¾³ÏÂ
+        #else//åœ¨æ‰“åŒ…å‡ºæ¥çš„ç¯å¢ƒä¸‹
                string path = System.IO.Directory.GetCurrentDirectory() + "/Log/"+ fileName;
         #endif
         

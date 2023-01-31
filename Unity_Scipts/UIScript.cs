@@ -35,9 +35,9 @@ public class UIScript : MonoBehaviour
     }
     public void ExitGame()
     {
-        #if UNITY_EDITOR //Èç¹ûÊÇÔÚ±à¼­Æ÷»·¾³ÏÂ
+        #if UNITY_EDITOR //å¦‚æœæ˜¯åœ¨ç¼–è¾‘å™¨ç¯å¢ƒä¸‹
                 UnityEditor.EditorApplication.isPlaying = false;
-        #else//ÔÚ´ò°ü³öÀ´µÄ»·¾³ÏÂ
+        #else//åœ¨æ‰“åŒ…å‡ºæ¥çš„ç¯å¢ƒä¸‹
                 Application.Quit();
         #endif
     }

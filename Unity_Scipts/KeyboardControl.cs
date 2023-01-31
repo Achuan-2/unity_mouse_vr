@@ -20,7 +20,7 @@ public class KeyboardControl : MonoBehaviour
     void Update()
     {
 
-        // enter ¡ü/¡ý to move position;
+        // enter â†‘/â†“ to move position;
         SimulateMove();
 
         // enter R go back to start point;
